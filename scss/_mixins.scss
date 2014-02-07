@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+/* Set Media Query Break Points */
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (max-width: 72em) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 64em) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 38em)  { @content; }
+  }
+}

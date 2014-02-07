@@ -1,0 +1,106 @@
+.container {
+  margin: auto;
+  max-width: 1140px;
+  width: 95%;
+  @extend %clearfix;
+}
+
+.row {
+  padding: 2em 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  @extend %clearfix;
+}
+
+.onesixth,
+.onefourth,
+.onethird,
+.onehalf,
+.twothirds,
+.threefourths {
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 38em) {
+  
+  .wrap {
+    width: 95%;
+  }
+  
+  /*** GRID ***/
+  .onesixth,
+  .onethird,
+  .twothirds,
+  .onefourth,
+  .threefourths,
+  .onehalf {
+    float: left;
+    margin: 0 5% 0 0;
+  }
+  
+  .opposite {
+    float: right;
+  }
+  
+  .onesixth:nth-of-type(3),
+  .onefourth:nth-of-type(2) {
+    margin-right: 0;
+  }
+  
+  .onethird,
+  .onesixth {
+    width: 30%;
+  }
+  
+  .twothirds {
+    width: 65%;
+  }
+  
+  .threefourths {
+    width: 73.75%;
+  }
+  
+  .threefourths + .onefourth {
+    width: 21.25%;
+  }
+  
+  .onehalf,
+  .onefourth {
+    width: 47.5%;
+  }
+  
+  /* push columns to the center */
+  
+  .skipsixth {
+    margin-left: 17.5%;
+  }
+  
+  .skipthird {
+    margin-left: 35%;
+  }
+  
+  .skipfourth {
+    margin-left: 26.25%;
+  }
+  
+  /* Get rid of last column's extra margin */
+  .last {
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+
+  .onesixth {
+    width: 12.5%;
+  }
+  
+  .onefourth {
+    width: 21.25%;
+  }
+  
+  .onesixth:nth-of-type(3),
+  .onefourth:nth-of-type(2) {
+    margin-right: 5%;
+  }
+  
+}
