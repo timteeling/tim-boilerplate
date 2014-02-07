@@ -1,4 +1,3 @@
-tim-boilerplate
-===============
+# Tim's Boilerplate
 
-Lots of boilerplates... this is mine using Sass taking hints from H5BP, Bootstrap and Inuit
+There's lots of boilerplates... this is mine using Sass taking hints from H5BP, Bootstrap and Inuit
